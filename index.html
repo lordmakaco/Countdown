@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Cuenta regresiva</title>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- CSS Costom-->
+		<link rel="stylesheet" href="css/goback.css">
+
+	</head>
+	<body>
+		<div class="container">
+			<h1>Code</h1>
+			<h2>Solo Faltan.</h2>
+
+			<div class="count">
+				<div class="countd">
+					<span id="days">00</span>
+					DIAS
+				</div>
+
+				<div class="countd">
+					<span id="hours">00</span>
+					HORAS
+				</div>
+
+				<div class="countd">
+					<span id="minutes">00</span>
+					MINUTOS
+				</div>
+
+				<div class="countd">
+					<span id="seconds">00</span>
+					SEGUNDOS
+				</div>
+			</div>
+		</div>
+	  <script>
+var count = new Date("dec 1,2019 00:01:00").getTime();
+var x = setInterval(function() {
+	var now = new Date().getTime();
+		var d = count - now;
+
+	var days = Math.floor(d/(1000*60*60*24));
+	var hours = Math.floor((d%(1000*60*60*24))/(1000*60*60));
+	var minutes = Math.floor((d%(1000*60*60))/(1000*60));
+	if(seconds < 10) {
+		seconds = "0"+seconds
+	}
+	var seconds = Math.floor((d%(1000*60))/1000);
+
+document.getElementById("days").innerHTML = days;
+document.getElementById("hours").innerHTML = hours;
+document.getElementById("minutes").innerHTML = minutes;
+document.getElementById("seconds").innerHTML = seconds;
+
+if(d <= 0){
+	clearInterval(x);
+}
+},1000);
+	  </script> 
+		<!-- Optional JavaScript -->
+		<script src="js/tiempoatras.js"
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	}}	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>;
