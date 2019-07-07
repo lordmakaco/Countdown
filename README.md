@@ -1,5 +1,5 @@
-# Countdown
-Con CSS ,HTML y JavaScript es posible dar formato para indicar una cuenta regresiva para un evento aquí un ejemplo
+
+
 #Countdown
 ==========
 
